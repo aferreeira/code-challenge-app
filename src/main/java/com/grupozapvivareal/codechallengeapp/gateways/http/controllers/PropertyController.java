@@ -10,22 +10,18 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.core.convert.ConversionService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import javax.validation.Valid;
-import java.io.IOException;
 import java.util.List;
-
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("/v2/properties")
+@RequestMapping("/properties")
 public class PropertyController {
 
     private final PropertyService propertyService;
 
     private final ConversionService conversionService;
-
 
     @PostMapping(produces = APPLICATION_JSON_VALUE)
     @ApiOperation("${propertycontroller.createproperty}")
