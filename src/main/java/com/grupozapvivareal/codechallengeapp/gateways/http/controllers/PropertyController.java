@@ -19,7 +19,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("/v2/properties")
+@RequestMapping("/properties")
 public class PropertyController {
 
     private final PropertyService propertyService;
