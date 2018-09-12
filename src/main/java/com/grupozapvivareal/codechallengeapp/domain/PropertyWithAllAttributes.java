@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Data
@@ -14,7 +15,7 @@ public class PropertyWithAllAttributes {
 
     private Integer id;
     private String title;
-    private Integer price;
+    private BigDecimal price;
     private String description;
     private Integer lat;
 

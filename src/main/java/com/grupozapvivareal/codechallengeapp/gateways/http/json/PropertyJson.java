@@ -4,13 +4,14 @@ import lombok.Data;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
+import java.math.BigDecimal;
 
 @Data
 public class PropertyJson {
 
     private String title;
 
-    private int price;
+    private BigDecimal price;
 
     private  String description;
 

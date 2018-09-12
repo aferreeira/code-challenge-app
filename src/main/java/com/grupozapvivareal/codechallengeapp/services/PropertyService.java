@@ -10,6 +10,7 @@ import javax.annotation.PostConstruct;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.math.BigDecimal;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
@@ -82,7 +83,7 @@ public class PropertyService {
                 .orElse(null);
     }
 
-    public PropertyWithAllAttributes createProperty(String title, int price, String description, int x, int y, int beds, int baths, int squareMeters) {
+    public PropertyWithAllAttributes createProperty(String title, BigDecimal price, String description, int x, int y, int beds, int baths, int squareMeters) {
 
         int id = totalProperties + 1;
         this.totalProperties++;
