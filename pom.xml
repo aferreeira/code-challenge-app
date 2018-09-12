@@ -58,8 +58,7 @@
 		<dependency>
 			<groupId>org.jetbrains</groupId>
 			<artifactId>annotations</artifactId>
-			<version>RELEASE</version>
-			<scope>compile</scope>
+			<version>16.0.2</version>
 		</dependency>
 		<dependency>
 			<groupId>io.springfox</groupId>
